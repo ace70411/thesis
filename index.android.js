@@ -6,33 +6,22 @@
 
 import React, { Component } from 'react';
 import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
+  AppRegistry, View
 } from 'react-native';
+import InforFoodButton from './app/components/InforFoodButton';
 import Header from './app/components/Header';
+import SelectQuanlity from './app/components/SelectQuanlity';
 
 export default class GuestApp extends Component {
   render() {
     return (
-      <Header />
+      <View>
+        <Header />
+        <SelectQuanlity />
+        <InforFoodButton />
+      </View>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  twitterOutline: {
-    flexDirection: 'column',
-    width: 70,
-    height: 70,
-    alignItems: 'center'
-  },
-  twitterIcon: {
-    flex: 1,
-    width: 40,
-    height: 40
-  },
-});
 
 AppRegistry.registerComponent('GuestApp', () => GuestApp);

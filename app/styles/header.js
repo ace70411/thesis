@@ -1,22 +1,21 @@
 import {StyleSheet} from 'react-native';
 
-const header = StyleSheet.create({
+const styles = StyleSheet.create({
   headerContainer: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    height: 70,
+    height: 50,
   },
   toolbarContainer: {
-    flex: 1,
-    alignItems: 'flex-start',
-  },
-  toolBar: {
-    height: 70,
-    width: 70
+    flex: 2,
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    marginLeft: 15
   },
   headerTitle: {
-    flex: 1,
+    flex: 2,
+    flexDirection: 'row',
+    justifyContent: 'center',
     alignItems: 'center',
   },
   title: {
@@ -24,29 +23,28 @@ const header = StyleSheet.create({
     fontSize: 20,
     color: '#696969',
   },
+  searchIcon: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+  },
   cartButtonContainer: {
     flex: 1,
-    alignItems: 'flex-end',
-  },
-  carButton: {
     flexDirection: 'row',
-    right: 10
-  },
-  cartImageButton: {
-    zIndex: -1,
-    left: 10
+    justifyContent: 'flex-end',
+    alignItems: 'center',
   },
   cartImage: {
-    height: 40,
-    width: 40,
+
   },
   numberDish: {
     width: 20,
     height: 20,
     borderRadius: 100/2,
     backgroundColor: 'green',
-    right: 10,
-    top: 0,
+    bottom: 10,
+    right: 10
   },
   numberDishText: {
     color: 'white',
@@ -56,4 +54,4 @@ const header = StyleSheet.create({
   },
 });
 
-export default header;
+export default styles;
