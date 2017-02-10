@@ -6,9 +6,10 @@ const selectQuanlity = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     width: 70,
+    right: 10
   },
   quanlityDish: {
-    color: 'black',
+    color: 'white',
     fontSize: 20,
     textAlign: 'center',
     fontFamily: 'notoserif',

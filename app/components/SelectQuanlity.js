@@ -20,7 +20,7 @@ export default class SelectQuanlity extends Component {
             <Icon
               name='minus-square-o'
               size={30}
-              color='black'
+              color='bisque'
             />
           </TouchableOpacity>
         </View>
@@ -37,7 +37,7 @@ export default class SelectQuanlity extends Component {
             <Icon
               name='plus-square-o'
               size={30}
-              color='black'
+              color='bisque'
             />
           </TouchableOpacity>
         </View>

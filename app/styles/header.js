@@ -24,19 +24,15 @@ const styles = StyleSheet.create({
     color: '#696969',
   },
   searchIcon: {
-    flex: 1,
     flexDirection: 'row',
     justifyContent: 'flex-end',
     alignItems: 'center',
+    marginRight: 10
   },
   cartButtonContainer: {
-    flex: 1,
     flexDirection: 'row',
-    justifyContent: 'flex-end',
+    justifyContent: 'flex-start',
     alignItems: 'center',
-  },
-  cartImage: {
-
   },
   numberDish: {
     width: 20,

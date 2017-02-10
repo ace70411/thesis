@@ -19,18 +19,23 @@ export default class Header extends Component {
             Menu
           </Text>
         </View>
+        <View style={{
+          flex: 2,
+          flexDirection: 'row',
+          justifyContent: 'flex-end',
+        }}
+        >
         <View style={header.searchIcon}>
           <IconSearch />
         </View>
         <View style={header.cartButtonContainer}>
-          <View style={header.cartImage}>
             <IconCart />
-          </View>
           <View style={header.numberDish}>
             <Text style={header.numberDishText}>
               5
             </Text>
           </View>
+        </View>
         </View>
       </View>
     );
