@@ -17,10 +17,11 @@ export default class DishIntro extends Component {
         <View style={styles.dishText}>
           <View>
             <Text
-              ellipsizeMode={'middle'}
+              numberOfLines= {2}
+              ellipsizeMode={'tail'}
               style={styles.nameText}
             >
-              Lau hai san
+              Lau hai san asdf asdf asdf sfd asdf asdf asdf asf asdf asdf sf sadf asdf asdf asdf a adsf asdf asdf asd asd asd asd
             </Text>
           </View>
           <View>
@@ -53,7 +54,6 @@ const styles = StyleSheet.create({
   },
   dishText: {
     alignSelf: 'auto',
-    width: 165,
   },
   nameText: {
     color: 'lavender',

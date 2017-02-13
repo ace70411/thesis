@@ -1,7 +1,7 @@
 import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
-  foodContainer: {
+  dishContainer: {
     flexDirection: 'row',
     padding: 0,
     backgroundColor: 'darkgreen',
@@ -11,11 +11,12 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     height: 90,
   },
-  foodControl: {
+  dishControl: {
     flex:1,
     flexDirection:'row',
     justifyContent:'flex-end',
-    alignItems:'center'
+    alignItems:'center',
+    marginLeft: 140
   }
 });
 

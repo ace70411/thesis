@@ -11,9 +11,9 @@ export default class Dish extends Component {
   }
   render(){
     return(
-      <View style={styles.foodContainer}>
+      <View style={styles.dishContainer}>
         <DishIntro />
-        <View style={styles.foodControl}>
+        <View style={styles.dishControl}>
           <SelectQuanlity />
           <DishInforButton />
         </View>

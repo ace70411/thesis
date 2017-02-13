@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {
-  View, Text
+  View, Text, TouchableOpacity
 } from 'react-native';
 import IconSearch from '../utility/IconSearch';
 import IconMenu from '../utility/IconMenu';
@@ -8,15 +8,20 @@ import IconCart from '../utility/IconCart';
 import header from '../styles/header';
 
 export default class Header extends Component {
+  constructor(props){
+    super(props);
+  }
   render(){
     return (
       <View style={header.headerContainer}>
         <View style={header.toolbarContainer}>
-          <IconMenu />
+          <TouchableOpacity onPress={this.props.onClickMenu}>
+            <IconMenu />
+          </TouchableOpacity>
         </View>
         <View style={header.headerTitle}>
           <Text style={header.title}>
-            Menu
+            {this.props.title}
           </Text>
         </View>
         <View style={{
