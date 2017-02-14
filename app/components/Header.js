@@ -33,14 +33,16 @@ export default class Header extends Component {
         <View style={header.searchIcon}>
           <IconSearch />
         </View>
-        <View style={header.cartButtonContainer}>
-            <IconCart />
-          <View style={header.numberDish}>
-            <Text style={header.numberDishText}>
-              5
-            </Text>
+        <TouchableOpacity onPress={this.props.onClickCart}>
+          <View style={header.cartButtonContainer}>
+              <IconCart />
+              <View style={header.numberDish}>
+                <Text style={header.numberDishText}>
+                  5
+                </Text>
+              </View>
           </View>
-        </View>
+        </TouchableOpacity>
         </View>
       </View>
     );

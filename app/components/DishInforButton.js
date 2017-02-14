@@ -13,7 +13,7 @@ export default class DishInforButton extends Component {
   render(){
     return(
       <View style={styles.infor}>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={this.props.onClickInfor}>
           <Icon
             name='information-outline'
             size={20}

@@ -30,7 +30,7 @@ export default class DishOrdered extends Component {
               </Text>
             </View>
         </View>
-          </View>
+      </View>
     );
   }
 }

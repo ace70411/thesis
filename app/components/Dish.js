@@ -15,7 +15,7 @@ export default class Dish extends Component {
         <DishIntro />
         <View style={styles.dishControl}>
           <SelectQuanlity />
-          <DishInforButton />
+          <DishInforButton onClickInfor={this.props.onClickInfor}/>
         </View>
       </View>
     );

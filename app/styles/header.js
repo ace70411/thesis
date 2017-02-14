@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 20,
     color: '#696969',
+    textAlign: 'center'
   },
   searchIcon: {
     flexDirection: 'row',
@@ -31,16 +32,17 @@ const styles = StyleSheet.create({
   },
   cartButtonContainer: {
     flexDirection: 'row',
-    justifyContent: 'flex-start',
+    justifyContent: 'flex-end',
     alignItems: 'center',
+    top: 13
   },
   numberDish: {
     width: 20,
     height: 20,
     borderRadius: 100/2,
-    backgroundColor: 'green',
+    backgroundColor: 'darkgreen',
     bottom: 10,
-    right: 10
+    right: 10,
   },
   numberDishText: {
     color: 'white',
