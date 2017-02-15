@@ -38,7 +38,7 @@ export default class Header extends Component {
               <IconCart />
               <View style={header.numberDish}>
                 <Text style={header.numberDishText}>
-                  5
+                  15
                 </Text>
               </View>
           </View>

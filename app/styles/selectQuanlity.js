@@ -5,8 +5,7 @@ const selectQuanlity = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    width: 70,
-    right: 10
+    width: 80,
   },
   quanlityDish: {
     color: 'white',

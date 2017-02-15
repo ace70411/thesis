@@ -15,7 +15,7 @@ export default class SelectQuanlity extends Component {
         <View>
           <TouchableOpacity
             activeOpacity={0.1}
-            onPress={()=> this.setState({quanlity: this.state.quanlity -1})}
+            onPress={()=> this.state.quanlity===0 ? this.setState({quanlity: 0}) :this.setState({quanlity: this.state.quanlity -1})}
           >
             <Icon
               name='minus-square-o'

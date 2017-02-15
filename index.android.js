@@ -19,7 +19,7 @@ export default class GuestApp extends Component {
 
   render() {
     return (
-      <App />
+      <App title={'Menu'} />
     );
   }
 }

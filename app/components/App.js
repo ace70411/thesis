@@ -5,6 +5,8 @@ import PopupDialog, {ScaleAnimation} from 'react-native-popup-dialog';
 import Header from './Header';
 import DishList from './DishList';
 import Menu from './Menu';
+import DishDetailDialog from './DishDetailDialog';
+import OrderDetailDialog from './OrderDetailDialog';
 
 
 export default class App extends Component {
@@ -31,7 +33,6 @@ export default class App extends Component {
               left: 0,
               borderTopWidth: 0.3,
               height: 40,
-              zIndex: 10,
               backgroundColor: '#ffffff'
             }}
           >
@@ -47,14 +48,17 @@ export default class App extends Component {
         <PopupDialog
           ref={(popupDialog) => this.dishDetailDialog = popupDialog}
           dialogAnimation={new ScaleAnimation()}
+          width={350}
         >
-          <Text>Dish</Text>
+          <DishDetailDialog onClickClose={() => this.dishDetailDialog.closeDialog()}/>
         </PopupDialog>
         <PopupDialog
           ref={(popupDialog) => this.orderDialog = popupDialog}
           dialogAnimation={new ScaleAnimation()}
+          width={350}
+          height={600}
         >
-          <Text>Order</Text>
+          <OrderDetailDialog onClickClose={() => this.orderDialog.closeDialog()}/>
         </PopupDialog>
       </DrawerLayoutAndroid>
     );

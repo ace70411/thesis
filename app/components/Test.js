@@ -1,5 +1,12 @@
 import React, {Component} from 'react';
 import {View, Image, StyleSheet} from 'react-native';
+import {
+  Card,
+  CardImage,
+  CardTitle,
+  CardContent,
+  CardAction
+} from 'react-native-card-view';
 
 export default class DishOrdered extends Component {
   constructor(props) {
@@ -8,28 +15,30 @@ export default class DishOrdered extends Component {
   render(){
     return(
       <View style={styles.dishOrderedContainer}>
-        <Image
-          source={require('../images/lau1.jpg')}
-          style={styles.image}
-          resizeMethod={'scale'}
-          resizeMode={'contain'}
-        />
+        <Card>
+          <CardImage>
+          <Image
+            source={require('../images/lau3.jpg')}
+            style={styles.image}
+            resizeMethod={'resize'}
+          />
+          </CardImage>
+        </Card>
       </View>
     );
   }
 }
 const styles = StyleSheet.create({
   dishOrderedContainer: {
+    backgroundColor: '#696969',
     flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'flex-end',
-    padding: 0,
+    padding:1,
     marginLeft: 5,
     marginRight: 5,
-    marginBottom: 3,
-    marginTop: 100,
+    marginTop: 50,
     borderRadius: 10,
-    height: 150,
+    height: 120,
+    position: 'relative'
   },
   dishControl: {
     flex:1,
@@ -39,6 +48,9 @@ const styles = StyleSheet.create({
     marginLeft: 150
   },
   image: {
-
+    resizeMode: 'contain',
+    position: 'relative',
+    width: 300,
+    height: 120
   },
 });
