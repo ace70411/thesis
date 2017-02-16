@@ -9,6 +9,7 @@ export default class OrderDetailDialog extends Component {
   render(){
     return(
       <View style={styles.cardContainer}>
+
         <View style={styles.header}>
           <View style={styles.control}>
             <View style={styles.icon}>
@@ -17,7 +18,10 @@ export default class OrderDetailDialog extends Component {
               </TouchableOpacity>
             </View>
             <View >
-              <Button title={'Order'}/>
+              <Button
+                title={'Order'}
+                onPress={()=>alert('ok')}
+              />
             </View>
           </View>
           <View style={styles.name}>
@@ -34,12 +38,10 @@ export default class OrderDetailDialog extends Component {
         <View style={styles.body}>
           <View style={styles.discription}>
             <Text>
-              Nguyen lieu
+              
             </Text>
             <Text>
-              asdfasdf
-              asdfasdf
-              asdfsasf
+
             </Text>
           </View>
         </View>

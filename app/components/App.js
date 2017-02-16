@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {DrawerLayoutAndroid, View, TouchableOpacity, Text} from 'react-native';
 import PopupDialog, {ScaleAnimation} from 'react-native-popup-dialog';
+import {Actions} from 'react-native-router-flux';
 
 import Header from './Header';
 import DishList from './DishList';
@@ -36,7 +37,7 @@ export default class App extends Component {
               backgroundColor: '#ffffff'
             }}
           >
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => Actions.History()}>
               <Text
                 style={{textAlign: 'center', color: 'gray',fontSize: 20, lineHeight: 32}}
               >

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import DishIntro from './DishIntro';
 
-export default class DishOrdered extends Component {
+export default class History extends Component {
   constructor(props) {
     super(props);
   }
@@ -36,6 +36,7 @@ export default class DishOrdered extends Component {
 }
 const styles = StyleSheet.create({
   dishOrderedContainer: {
+    top: 70,
     flexDirection: 'row',
     padding: 0,
     backgroundColor: 'darkgreen',
