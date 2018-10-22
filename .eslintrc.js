@@ -37,10 +37,6 @@ module.exports = {
             {"avoidEscape": true,
              "allowTemplateLiterals": true
             }
-        ],
-        "semi": [
-            "error",
-            "always"
         ]
     }
 };
